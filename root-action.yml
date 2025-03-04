@@ -25,4 +25,4 @@ Action:
       - Action:
           text: Source
           icon: fab fa-github
-          location: https://github.com/Nasdanika-Demos/crew-ai
+          location: https://github.com/Nasdanika-Knowledge/crew-ai-visual-synopsis
