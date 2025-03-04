@@ -1,6 +1,6 @@
 bootstrap.Page:
   cdn: true
-  theme: Cerulean
+  theme: Litera
   name: Application Page Template
   language: EN
   stylesheets: 
@@ -21,9 +21,23 @@ bootstrap.Page:
     - https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
     - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/groovy.min.js
   head:
-    content.Text: |    
+    # Google analytics
+    content.Text: |+2    
+
       <!-- ${search-config} -->
-                
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-9BRJVLK8CC"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-9BRJVLK8CC');
+      </script>    
+
+      <!-- ${search-config} -->
+
   body:
     app.Page:
       fluid: true
