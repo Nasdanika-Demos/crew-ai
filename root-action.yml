@@ -1,7 +1,7 @@
 Action:
     icon: https://docs.nasdanika.org/images/nasdanika-logo.png
-    text: Nasdanika Demos
-    location: https://github.com/Nasdanika-Demos
+    text: Nasdanika Knowledge
+    location: https://github.com/Nasdanika-Knowledge
     children:
       - Action:
           location: ${base-uri}index.html
@@ -13,6 +13,14 @@ Action:
                   style: true
                   source:
                     exec.content.Resource: README.md
+      - Action:
+          location: ${base-uri}search.html
+          icon: fas fa-search
+          text: Search
+          content:
+            Interpolator:
+              source:
+                exec.content.Resource: classpath://org/nasdanika/models/app/gen/search.html
     navigation:
       - Action:
           text: Source
