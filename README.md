@@ -10,6 +10,11 @@ For example, you can:
 
 * Create diagram element processors and generate Pythong code from diagrams.
 * Create a library or libraries of pre-configured diagram elements so you can visually design agentic systems.
+* Create an CrewAI semantic model[^arch] and then:
+    * Use [semantic mapping](https://docs.nasdanika.org/core/mapping/index.html) to map diagram elements to model elements
+    * Generate documentation and Python sources from the semantic model
+
+[^arch]: Possibly extending the [Architecture Model](https://architecture.models.nasdanika.org/) [Architecture Description Element](https://architecture.models.nasdanika.org/references/eClassifiers/ArchitectureDescriptionElement/index.html)
 
 ## Resources
 
